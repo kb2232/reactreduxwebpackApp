@@ -30,3 +30,25 @@
     else return curState;
   }
   ```
+  ## project structure
+  ```
+  .babelrc
+  index.html
+  package.json
+  server.js
+  webpack.config.js
+  src/
+    -actions/
+      -index.js
+    -components/
+      -App.js
+    -reducers/
+      -index.js
+    -index.js
+    -index.css
+  ```
+
+  ## some redux packages
+    1. Provider Tag - your main App most be wrapped by the provider tag and you must pass to it a prop called "store"; pass to it
+      createStore(reducers); 'reducers' is all your reducers in index.js
+    2. createStore - this contains all our reducers and all our application states
