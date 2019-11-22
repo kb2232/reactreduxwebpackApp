@@ -30,3 +30,20 @@
     else return curState;
   }
   ```
+  ## project structure
+  ```
+  .babelrc
+  index.html
+  package.json
+  server.js
+  webpack.config.js
+  src/
+    -actions/
+      -index.js
+    -components/
+      -App.js
+    -reducers/
+      -index.js
+    -index.js
+    -index.css
+  ```
