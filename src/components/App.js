@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SportList from './sportList';
+
 class App extends React.Component{
   constructor(){
     super();
@@ -8,7 +10,7 @@ class App extends React.Component{
   render(){
     return(
       <div className="component">
-        START HERE GO ANYWHERE!!!
+        <SportList />
       </div>
     )
   }
