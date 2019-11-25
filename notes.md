@@ -8,7 +8,7 @@
     ```
       Action Creator --> Action --> Dispatch --> Reducers --> State
     ```
-  1. Action Creator is a function that returns a TYPE and a PAYLOAD
+  1. Action Creator is a function that returns a TYPE and a PAYLOAD - used to update our state
   ```JAVASCRIPT
   const makeDeposit = amount =>{
     return{
@@ -52,3 +52,10 @@
     1. Provider Tag - your main App most be wrapped by the provider tag and you must pass to it a prop called "store"; pass to it
       createStore(reducers); 'reducers' is all your reducers in index.js
     2. createStore - this contains all our reducers and all our application states
+    3. connect - a react-redux package - wires up the react side with the redux side. You have to use connect() anywhere you are bridging the two libraries;
+        - it is used like a self-calling function
+        - ```JAVASCRIPT
+            export default connect()(NameOfComponent);
+          ```
+        - connect must be mapped with 'MapStateToProps(state)' -the name is conventional - in essence, take our state data in our redux store and then pass it as a prop to
+          to your react components; the 'state' variable contains all the current states in your redux store.

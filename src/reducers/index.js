@@ -22,7 +22,7 @@ const topSports = ()=>{
       origin:'U.S.'
     },
     {
-      title:'FOOTBALL',
+      title:'American FOOTBALL',
       origin:'U.S.'
     },
     {
